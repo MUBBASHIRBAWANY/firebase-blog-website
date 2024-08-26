@@ -1,0 +1,40 @@
+#backimg{
+    width: 773px;
+    height: 100vh;
+    margin-left: -7vw;
+}
+
+#detail{
+    
+    height: 50vh;
+    width: 29vw;
+    margin-top: 25vh;
+    margin-left: 15vw;
+    
+}
+#detail p{
+    font-size: 28px;
+font-weight: 800;
+}
+#detail span{
+    color: rgba(19, 28, 36, 0.438);
+}
+#detail label{
+    color: rgba(17, 20, 22, 0.438);
+    font-size: 26px;
+    font-weight: bold;
+}
+#detail input{
+    outline: rgba(17, 20, 22, 0.438); ;
+    width: 22vw;
+    height: 5vh;
+
+}
+
+#detail button{
+    margin-top: 3%;
+    width: 22vw;
+    height: 5vh;
+background-color: blue;
+color: white    ;
+}

@@ -1,0 +1,84 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+<style>
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+
+  </head>
+  <body id="body">
+    <div class="container mt-4">
+        <div class="row">
+<div middel id="loader" style="display : none;" class="loader"></div>
+            <div class="col-lg-12">
+                <h1 class="alert alert-primary text-center">
+                  Health Blog
+<a href='./addblog.html'> <button class="btn btn-sm btn-primary">Add Blog</button></a>
+<button id="logout" class="btn btn-sm btn-primary">Logout</button>
+               </h1>
+            </div>
+            
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table id="datatable" class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Heading</th>
+                                        <th>Heading Contant</th>
+                                        <th>User</th>
+                                        <th>Edit</th>
+                                        <th>Hapus</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="table">
+        
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="./scripts/index.js"></script>
+  </body>
+</html>

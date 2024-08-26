@@ -1,0 +1,74 @@
+
+
+add
+await addDoc(collection(db, "Assingments"),{
+        assingmentName : aName.value,
+        assingmentlink : alink.value,
+        user : auser
+      });
+
+
+
+edit
+	geting doc
+
+
+ let currentData = await getDoc(doc(db, "Assingments", id));
+        let datavalue = currentData.data()
+
+	update doc
+
+ let currentData = await updateDoc(doc(db, "Assingments", val    ),{
+            assingmentName :heading.value,
+            assingmentlink : Contant.value,
+            
+        });
+
+
+
+
+read
+	get all
+
+	const querySnapshot = await getDocs(collection(db, "Assingments"));
+querySnapshot.forEach((doc) => {
+}
+
+	get filter
+const citiesRef = collection(db, "Assingments");
+        const q = query(citiesRef, where("user", "==", auser ))
+        const querySnapshot = await getDocs(q);
+        querySnapshot.forEach((doc) => {}
+
+
+
+
+delete
+	await deleteDoc(doc(db, "Assingments", id))
+
+
+
+singup
+let userCreate = await createUserWithEmailAndPassword(auth, email, password)
+
+
+
+
+login
+ let userCreate = await signInWithEmailAndPassword(auth, email, password)
+
+
+
+logout
+ signOut(auth).then(() => {}
+
+
+
+
+
+
+onAuthStateChanged(auth, (user) => {
+    if (!user) {
+        window.location.href = './pages/login.html'
+    } 
+  });
